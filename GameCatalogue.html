@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Catalogue</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1 class="display display-1 text text-center">My 2022 Games Completed</h1>
+    <br>
+    <div class="card">
+        <div class='card-body'>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="game-title">Game Title</label>
+                        <input type="text" class="form-control" id="game-title">
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="platform">Platform</label>
+                        <input type="text" class="form-control" id="platform" placeholder="Playstation, Xbox, PC, etc">
+                    </div>
+                    
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="date-completed">Date Finished</label>
+                        <input type="date" class="form-control" id="date-completed">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="my-review">My Review</label>
+                        <input type="text" class="form-control" id="my-review" placeholder="What are your thoughts on this game?">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-info from-control">Log Game</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped table-hover">
+        <tr>
+            <th>Game</th>
+            <th>Platform</th>
+            <th>Completion Date</th>
+            <th>Review</th>
+        </tr>
+    
+
+
+
+
+    <script src="GameCatalogue.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
